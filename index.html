@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <div class="w-100 playerScores">
+        <div class="w-40" id="p1Score">
+            Player 1 Score
+        </div>
+        <div class="w-40" id="p2Score">
+            Player 2 Score
+        </div>
+    </div>
+    <div class="w100 turn" id="turn">
+        Player X Turn
+    </div>
+
+    <div class="playBoard">
+        <table class="player">
+            <tr>
+                <td class="title">Player 1</td>
+            </tr>
+            <tr>
+                <td class="cell" id="pc1">
+                    <div class="draggableCell" id="dc1" draggable="true" isInside="true">X</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="cell" id="pc2">
+                    <div class="draggableCell" id="dc2" draggable="true" isInside="true">X</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="cell" id="pc3">
+                    <div class="draggableCell" id="dc3" draggable="true" isInside="true">X</div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="gameBoard" id="gameBoard">
+            <tr class="gameBoardRow">
+                <td class="cell board" id="bc1"></td>
+                <td class="cell board" id="bc2"></td>
+                <td class="cell board" id="bc3"></td>
+            </tr>
+            <tr class="gameBoardRow">
+                <td class="cell board" id="bc4"></td>
+                <td class="cell board" id="bc5"></td>
+                <td class="cell board" id="bc6"></td>
+            </tr>
+            <tr class="gameBoardRow">
+                <td class="cell board" id="bc7"></td>
+                <td class="cell board" id="bc8"></td>
+                <td class="cell board" id="bc9"></td>
+            </tr>
+        </table>
+
+        <div id="result">
+            <p id="resultTitle">
+                Player 1 Wins
+            </p>
+
+            <div class="continue" onclick="nextGame()">
+                Continue
+            </div>
+        </div>
+
+        <table class="player">
+            <tr><td class="title">Player 2</td></tr>
+            <tr>
+                <td class="cell" id="pc4">
+                    <div class="draggableCell" id="dc4" draggable="true" isInside="true">O</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="cell" id="pc5">
+                    <div class="draggableCell" id="dc5" draggable="true" isInside="true">O</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="cell" id="pc6">
+                    <div class="draggableCell" id="dc6" draggable="true" isInside="true">O</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        This game is an assigment of Web Engineering Lab 
+    </footer>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>

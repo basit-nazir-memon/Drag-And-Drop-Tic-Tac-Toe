@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+header{
+    height: 60px;
+    background-color: royalblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerScores{
+    display:flex;
+    background-color: rgb(47, 71, 143);
+    color: white;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.turn{
+    background-color: rgb(24, 38, 82);
+    color: white;
+    height: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.playBoard{
+    position: absolute;
+    margin-top: 13vh;
+    display: flex;
+    justify-content: space-around;
+    width: 98%;
+    margin-left: 1%;
+    height: calc(50vh);
+    align-items: center;
+}
+
+.player{
+    background-color: rgb(218, 227, 255);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cell{
+    width: auto;
+    height: 15vh;
+    border-radius: 5px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: white;
+    margin: 5px;
+}
+
+.draggableCell{
+    width: auto;
+    height: 15vh;
+    border-radius: 5px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: royalblue;
+}
+
+.gameBoard{
+    background-color: rgb(218, 227, 255);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gameBoardRow{
+    display: flex;
+}
+
+.gameCard:hover{
+    background-color: rgb(19, 19, 139);
+}
+
+.gameCard{
+    background-color: royalblue;
+    position: absolute;
+}
+
+footer{
+    background-color: royalblue;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(19, 19, 139);
+}
+
+.danger{
+    background-color: rgb(255, 146, 146);
+    color: red;
+}
+
+#result{
+    width: 50vh;
+    background-color: rgb(218, 227, 255);
+    border-radius: 5px;
+    height: 45vh;
+    color: royalblue;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    display: none;
+}
+
+.continue{
+    background-color: royalblue;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.continue:hover{
+    background-color: rgb(19, 19, 139);
+}
